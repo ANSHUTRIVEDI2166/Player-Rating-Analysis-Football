@@ -1,25 +1,55 @@
-# project-1
-repository for our 4th sem project
+# ⚽ Project: Player Rating Analysis
 
-#Project: Player Rating Analysis
+Welcome to our 4th semester machine learning project — **Player Rating Analysis**.  
+This project aims to predict and analyze player ratings using statistical features and machine learning models, with custom logic to reflect the real impact of player positions.
 
-This project focuses on Player Rating Analysis using Python and machine learning techniques. It involves analyzing player performance based on key statistics such as position, team, nationality, goals, and assists The dataset is processed using techniques like OneHotEncoding and Standard Scaling to handle categorical and numerical data
+## 📊 Objective
 
-#Key Steps:
-# Data preprocessing using ColumnTransformer
-# Training machine learning models – Support Vector Regressor (SVR), Random Forest Regressor, and XGBoost Regressor
-# Custom weighted logic – Different weights are assigned based on player position (e.g., a defender scoring a goal contributes more to the rating than a striker scoring a goal)
-# Performance evaluation – Comparing actual and predicted player ratings to assess model accuracy
+To build a system that can analyze and predict player performance ratings based on various match and player-related statistics like:
+- Goals
+- Assists
+- Position
+- Nationality
+- Club
 
-#Skills:
-Python,
-Machine Learning,
-Data Preprocessing,
-Feature Engineering,
-Ensemble Models,
-Model Evaluation,
+The ratings are influenced by **custom position-based weight logic** that adds realism and fairness to the rating mechanism.
 
-#Summary:
-The project aims to identify patterns in player performance and improve prediction accuracy through data-driven insights The use of ensemble models like Random Forest and XGBoost helps enhance predictive power and robustness
+---
 
+## 🧠 Key Features
+
+- ⚙️ **Data Preprocessing**: 
+  - Categorical encoding using `OneHotEncoder`
+  - Feature scaling with `StandardScaler`
+  - Combined using `ColumnTransformer`
+
+- 🔁 **Model Training**:
+  - Support Vector Regressor (SVR)
+  - Random Forest Regressor
+  - XGBoost Regressor
+
+- 🧮 **Custom Logic**:
+  - Dynamic weight assignment depending on player roles
+  - For example:
+    - A defender scoring a goal has **higher impact** than a striker
+    - Assists by midfielders are **weighed more** than those by forwards
+
+- 📈 **Model Evaluation**:
+  - Compare predicted vs. actual ratings
+  - Measure performance using metrics like MAE, RMSE, and R² Score
+
+---
+
+## 🧰 Tech Stack & Tools
+
+- **Language**: Python 🐍
+- **Libraries**:
+  - `pandas`, `numpy` – Data processing
+  - `scikit-learn` – Preprocessing, SVR, evaluation
+  - `xgboost` – XGBoost Regressor
+  - `matplotlib`, `seaborn` – Visualization
+
+---
+
+## 📂 Folder Structure
 
