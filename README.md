@@ -49,7 +49,4 @@ The ratings are influenced by **custom position-based weight logic** that adds r
   - `xgboost` – XGBoost Regressor
   - `matplotlib`, `seaborn` – Visualization
 
----
-
-## 📂 Folder Structure
 
